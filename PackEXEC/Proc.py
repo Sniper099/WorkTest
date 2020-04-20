@@ -22,7 +22,7 @@ def AffSites(zon):
     
 #Affichage de sites selon la catégorie
 def Category(zon):
-    if(zon='Rabat-Salé'):
+    if (zon='Rabat-Salé'):
         Monn=MonumentHistorique(zon)
         Monn.MCategoryI()
         Muss=Musee(zon)

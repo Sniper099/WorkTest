@@ -1,12 +1,12 @@
-import ZoneTouristique
+from ZoneTouristique import ZoneTouristique 
 class MonumentHistorique(ZoneTouristique):
     Mon=['Tour Hassan','Oudaya','Chellah']
     MonII=['Ein Zarqa','Qasr Khalifi']
     mon=''
     zone=''
-    def __init__(self,zone):
+    def __init__(self,zone,mon='Catégorie Monument Historique'):
         ZoneTouristique.__init__(self,zone)
-        self.mon='Catégorie Monument Historique'
+        self.mon=mon
     def MCategoryI(self): 
         print('La catégorie choisie est -----Monument Historique-----\n')
         print('\t****** Les Sites de Catégorie Monument Histrique sont: *****\n')
@@ -27,6 +27,8 @@ class MonumentHistorique(ZoneTouristique):
         print('\t****** Les Sites de Thème Histoire sont: *****\n')
         print('\t', self.MonII[0] ,'\n \t' ,self.MonII[1], '\n')
         return(True)
+    
+
         
         
         

@@ -5,6 +5,9 @@ class ZoneTouristique:
         self.zone=zone
     def verify(self): 
         return (self.zone in self.Zones)
+    
+
+
         
         
         

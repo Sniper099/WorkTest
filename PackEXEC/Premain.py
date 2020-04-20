@@ -2,7 +2,7 @@ from PackDATA import *
 import Proc.py
 def UserIntercat():
     AffZone()
-    print('*********Veuillez choisie une Zone Touristique S Il VOUS PLAIT********')
+    print('*********Veuillez choisir une Zone Touristique S Il VOUS PLAIT********')
     zon=string(input('Veuillez entrer le nom de La Zone Touristique'))   
     SelectZone(zon)
     Number=0

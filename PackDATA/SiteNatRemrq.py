@@ -1,12 +1,12 @@
-import ZoneTouristique
+from ZoneTouristique import ZoneTouristique
 class SiteNatRemrq(ZoneTouristique):
     Nat=['Village de poterie Oulja','Ancienne Médina Rabat']
     NatII=['Mirleft','Ouad Assaka','Targa']
     nat=''
     zone=''
-    def __init__(self,zone):
+    def __init__(self,zone,nat='Catégorie Site Naturel Remarquable'):
         ZoneTouristique.__init__(self,zone)
-        self.nat='Catégorie Site Naturel Remarquable'
+        self.nat=nat
     def NCategoryI(self): 
         print('La catégorie choisie est ----- Site Naturel Remarquable-----\n')
         print('\t****** Les Sites de Catégorie Site Naturel Remarquable sont: *****\n')
@@ -28,6 +28,7 @@ class SiteNatRemrq(ZoneTouristique):
         print('\t' ,self.NatII[0], '\n \t',self.NatII[1], '\n \t' ,self.NatII[2],'\n')
         return(True)
         
+
         
         
         

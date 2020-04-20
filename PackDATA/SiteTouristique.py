@@ -9,5 +9,5 @@ class SiteTouristique():
             return(self.ZnST['Rabat-Salé'])
         else:
             return(self.ZnST['Tiznit'])
-        
+
     

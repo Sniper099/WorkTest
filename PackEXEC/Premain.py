@@ -1,4 +1,5 @@
 from PackDATA import *
+from PackETEN import *
 def UserIntercat():
     AffZone()
     print('*********Veuillez choisir une Zone Touristique S Il VOUS PLAIT********')
@@ -21,6 +22,8 @@ def UserIntercat():
             Theme(zon)
         elif(Number==4):
             Visite(zon)
+        elif(Number==5):
+            Itener(zon)
         else:
             break
 

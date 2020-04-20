@@ -1,7 +1,7 @@
 import numpy as np
 import sys
 from PackEXEC import *
-def intin():
+def Itener(zon):
     print("Veuillez preciser le nombre de sites a visiter : ")
     Nu=int(input())  #nombre de site parcorrue
     SI=['Tour Hassan','Oudaya','Chellah','Le Muse Mohammed VI','Muse Belghazi','Muse Maroc Tlcom','Village de poterie Oulja','Ancienne Medina Rabat','Oued Bouregreg','Jardin exotique']

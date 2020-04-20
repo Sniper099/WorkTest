@@ -1,5 +1,4 @@
 from PackDATA import *
-import Proc.py
 def UserIntercat():
     AffZone()
     print('*********Veuillez choisir une Zone Touristique S Il VOUS PLAIT********')

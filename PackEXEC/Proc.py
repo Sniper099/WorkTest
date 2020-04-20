@@ -22,7 +22,7 @@ def AffSites(zon):
     
 #Affichage de sites selon la catégorie
 def Category(zon):
-    if (zon='Rabat-Salé'):
+    if (zon=='Rabat-Salé'):
         Monn=MonumentHistorique(zon)
         Monn.MCategoryI()
         Muss=Musee(zon)
@@ -31,7 +31,7 @@ def Category(zon):
         Prodd.PCategoryI()
         Natt=SiteNatRemrq(zon)
         Natt.NCategoryI()
-    elif(zon='Tiznit'):
+    elif(zon=='Tiznit'):
         Monn=MonumentHistorique(zon)
         Monn.MCategoryII()
         Muss=Musee(zon)
@@ -44,7 +44,7 @@ def Category(zon):
 
 #Affichage de sites selon le thème
 def Theme(zon):
-    if(zon='Rabat-Salé'):
+    if(zon=='Rabat-Salé'):
         Monn=MonumentHistorique(zon)
         Monn.MThemeHistoryI()
         Muss=Musee(zon)
@@ -55,7 +55,7 @@ def Theme(zon):
         Prodd.MThemeArtI()
         Natt=SiteNatRemrq(zon)
         Natt.MThemeNatI()
-    elif(zon='Tiznit'):
+    elif(zon=='Tiznit'):
         Monn=MonumentHistorique(zon)
         Monn.MThemeHistoryII()
         Prodd=SiteProduction(zon)
@@ -66,10 +66,10 @@ def Theme(zon):
     
 #Affichage des sites qui proposent des visites guidées
 def Visite(zon):
-    if(zon='Rabat-Salé'):
+    if(zon=='Rabat-Salé'):
         Vis=SiteVisite()
         Vis.VisiteI()
-    elif(zon='Tiznit'):
+    elif(zon=='Tiznit'):
         print('La Zone Touristique de TIZNIT ne propose aucune visite guidée')
     return(True)
         

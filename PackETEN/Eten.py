@@ -1,6 +1,5 @@
 import numpy as np
 import sys
-from PackEXEC import *
 def Itener(zon):
     print("Veuillez preciser le nombre de sites a visiter : ")
     Nu=int(input())  #nombre de site parcorrue

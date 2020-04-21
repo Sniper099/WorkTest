@@ -1,5 +1,5 @@
-from PackDATA import *
-from PackETEN import *
+import Proc 
+from Eten import *
 def UserIntercat():
     AffZone()
     print('*********Veuillez choisir une Zone Touristique S Il VOUS PLAIT********')

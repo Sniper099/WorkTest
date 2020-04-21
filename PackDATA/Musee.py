@@ -1,4 +1,4 @@
-from ZoneTouristique import ZoneTouristique
+from PackDATA.ZoneTouristique import ZoneTouristique 
 class Musee(ZoneTouristique):
     Mus=['Le Musée Mohammed VI','Musée Belghazi','Musée Maroc Télécom']
     mus=''

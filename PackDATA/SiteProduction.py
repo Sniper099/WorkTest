@@ -1,4 +1,4 @@
-from ZoneTouristique import ZoneTouristique
+from PackDATA.ZoneTouristique import ZoneTouristique 
 class SiteProduction(ZoneTouristique):
     Prod=['Village de poterie Oulja','Ancienne Médina Rabat']
     ProdII=['Quissariat Neqra','Sidi Boulfdayl','Al Aqwass']

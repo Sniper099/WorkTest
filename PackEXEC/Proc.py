@@ -1,4 +1,10 @@
-from PackDATA import *
+from PackDATA.MonumentHistorique import MonumentHistorique
+from PackDATA.Musee import Musee
+from PackDATA.SiteProduction import SiteProduction
+from PackDATA.SiteNatRemrq import SiteNatRemrq
+from PackDATA.SiteTouristique import SiteTouristique
+from PackDATA.ZoneTouristique import ZoneTouristique
+from PackDATA.SiteVisite import SiteVisite
 #Affichage des zones
 def AffZone():
     print('********************************* Les Zones diponibles sur notre gestionnaire *********************************\n')

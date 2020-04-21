@@ -1,4 +1,4 @@
-from ZoneTouristique import ZoneTouristique
+from PackDATA.ZoneTouristique import ZoneTouristique 
 class SiteNatRemrq(ZoneTouristique):
     Nat=['Village de poterie Oulja','Ancienne Médina Rabat']
     NatII=['Mirleft','Ouad Assaka','Targa']

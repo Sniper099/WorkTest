@@ -1,4 +1,4 @@
-from ZoneTouristique import ZoneTouristique 
+from PackDATA.ZoneTouristique import ZoneTouristique 
 class MonumentHistorique(ZoneTouristique):
     Mon=['Tour Hassan','Oudaya','Chellah']
     MonII=['Ein Zarqa','Qasr Khalifi']
@@ -28,6 +28,7 @@ class MonumentHistorique(ZoneTouristique):
         print('\t', self.MonII[0] ,'\n \t' ,self.MonII[1], '\n')
         return(True)
     
+
 
         
         

@@ -1,10 +1,10 @@
 import Proc 
 from PackETEN.Eten import *
 def UserIntercat():
-    AffZone()
+    Proc.AffZone()
     print('*********Veuillez choisir une Zone Touristique S Il VOUS PLAIT********')
-    zon=string(input('Veuillez entrer le nom de La Zone Touristique'))   
-    SelectZone(zon)
+    zon=str(input('Veuillez entrer le nom de La Zone Touristique'))   
+    Proc.SelectZone(zon)
     Number=0
     while(Number!=5):
         print('----------La Zone Touristique choisie est La Zone de :', zon, '\n')
@@ -12,16 +12,15 @@ def UserIntercat():
         print('Pour lister les sites de La Zone Touristique ',zon,'Selon Categorie Cliquez sur: \t 2 \n')
         print('Pour lister les sites de La Zone Touristique ',zon,'Selon Theme Cliquez sur: \t 3 \n')
         print('Pour lister les sites de La Zone Touristique ',zon,'qui proposent une Visite Guidée Cliquez sur: \t 4 \n')
-        AffZoneNumber=int(input('Entrer le nom de Service désiré'))
-        #Selon les Numbers on aura des actions
+        Number=int(input('Entrer le nom de Service désiré'))        #Selon les Numbers on aura des actions
         if(Number==1):
-            AffSites(zon)
+            Proc.AffSites(zon)
         elif(Number==2):
-            Category(zon)
+            Proc.Category(zon)
         elif(Number==3):
-            Theme(zon)
+            Proc.Theme(zon)
         elif(Number==4):
-            Visite(zon)
+            Proc.Visite(zon)
         elif(Number==5):
             Itener(zon)
         else:

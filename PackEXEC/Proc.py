@@ -25,6 +25,7 @@ def AffSites(zon):
     Sitee=SiteTouristique(zon)
     S=Sitee.SitesDZones()
     print(S)
+    return(S)
     
 #Affichage de sites selon la catégorie
 def Category(zon):

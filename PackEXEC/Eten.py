@@ -34,6 +34,6 @@ def Itener(zon):
         matrix= np.loadtxt('Matrix2.txt', usecols=range(8))
         for i in range(len(S)-1):
             D+=matrix[dictioII[S[i]]][dictioII[S[i+1]]]
-        print('Vous avez parcorru ou vous allez parcourir est de: ' + str(D) + 'km \n')
+        print('Vous avez parcorru ou vous allez parcourir est de Distance de : ' + str(D) + 'km \n')
       
 

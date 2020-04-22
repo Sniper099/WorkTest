@@ -3,13 +3,13 @@ import sys
 def Itener(zon):
     print("Veuillez preciser le nombre de sites a visiter : ")
     Nu=int(input())  #nombre de site parcorrue
-    SI=['Tour Hassan','Oudaya','Chellah','Le Muse Mohammed VI','Muse Belghazi','Muse Maroc Tlcom','Village de poterie Oulja','Ancienne Medina Rabat','Oued Bouregreg','Jardin exotique']
-    dictioI={'Tour Hassan': 0, 'Oudaya': 1, 'Chellah': 2, 'Le Muse Mohammed VI': 3, 'Muse Belghazi': 4, 'Muse Maroc Tlcom': 5, 'Village de poterie Oulja': 6, 'Ancienne Medina Rabat': 7, 'Oued Bouregreg': 8, 'Jardin exotique': 9}
+    SI=['Tour Hassan','Oudaya','Chellah','Le Musee Mohammed VI','Musee Belghazi','Musee Maroc Telecom','Village de poterie Oulja','Ancienne Medina Rabat','Oued Bouregreg','Jardin exotique']
+    dictioI={'Tour Hassan': 0, 'Oudaya': 1, 'Chellah': 2, 'Le Musee Mohammed VI': 3, 'Musee Belghazi': 4, 'Musee Maroc Telecom': 5, 'Village de poterie Oulja': 6, 'Ancienne Medina Rabat': 7, 'Oued Bouregreg': 8, 'Jardin exotique': 9}
     SII=['Ein Zarqa','Mirleft','Quissariat Neqra','Ouad Assaka','Targa','Sidi Boulfdayl','Al Aqwass','Qasr Khalifi']
     dictioII={'Ein Zarqa': 0, 'Mirleft': 1, 'Quissariat Neqra': 2,'Ouad Assaka': 3,'Targa': 4,'Sidi Boulfdayl': 5,'Al Aqwass': 6,'Qasr Khalifi': 7}
     S=[]
     D=0  #La distance
-    if zon=='Rabat-Salé':
+    if zon=='Rabat-Sale':
         print("Voici la liste des sites disponibles :")
         for i in SI:
             print("----site :" + i)

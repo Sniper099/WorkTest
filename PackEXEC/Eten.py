@@ -1,8 +1,7 @@
 import numpy as np
 import sys
 def Itener(zon):
-    print("Veuillez preciser le nombre de sites a visiter : ")
-    Nu=int(input())  #nombre de site parcorrue
+    Nu=int(input('Veuillez entrez le nombre de sites visités ou que vous voulez visiter :\t' ))  #nombre de site parcorrue
     SI=['Tour Hassan','Oudaya','Chellah','Le Musee Mohammed VI','Musee Belghazi','Musee Maroc Telecom','Village de poterie Oulja','Ancienne Medina Rabat','Oued Bouregreg','Jardin exotique']
     dictioI={'Tour Hassan': 0, 'Oudaya': 1, 'Chellah': 2, 'Le Musee Mohammed VI': 3, 'Musee Belghazi': 4, 'Musee Maroc Telecom': 5, 'Village de poterie Oulja': 6, 'Ancienne Medina Rabat': 7, 'Oued Bouregreg': 8, 'Jardin exotique': 9}
     SII=['Ein Zarqa','Mirleft','Quissariat Neqra','Ouad Assaka','Targa','Sidi Boulfdayl','Al Aqwass','Qasr Khalifi']
@@ -10,35 +9,31 @@ def Itener(zon):
     S=[]
     D=0  #La distance
     if zon=='Rabat-Sale':
-        print("Voici la liste des sites disponibles :")
+        print('Veuillez choisir parmis les sites disponibles :')
         for i in SI:
-            print("----site :" + i)
+            print('>>>Site Touristique :' + i)
         for i in range(Nu):
-            print("Veuillez preciser le nom du site touristique à visiter :")
-            site=str(input())
+            site=str(input('Veuillez preciser le site touristique visité/à visiter : \n'))
             while (site not in dictioI):
-                print("Oups mauvais choix!! entrer une autre zone ^^")
-                site=str(input())
+                site=str(input('Vous avez mal ecrit le site! Essayer une autre fois SVP! \n'))
             S.append(site)
         matrix= np.loadtxt('Matrix1.txt', usecols=range(10))  #on importe notre matrice a l'aide de numpy pour pouvoire faire des traitements
         for i in range(len(S)-1):
             D+=matrix[dictioI[S[i]]][dictioI[S[i+1]]]
-        print("la distance de cet intineraire est: " + str(D) +"km")
+        print("la distance de cet intineraire est: " + str(D) +"km \n")
        
     if zon=='Tiznit':
-        print("Voici la liste des sites disponibles :")
+        print('Veuillez choisir parmis les sites disponibles :')
         for i in SII:
-            print("----site :" + i)
+            print('>>>Site Touristique :' + i)
         for i in range(Nu):
-            print("Veuillez preciser le nom du site touristique à visiter :")
-            site = str(input())
+            site = str(input('Veuillez preciser le site touristique visité/à visiter : \n'))
             while (site not in dictioII):
-                print("Oups mauvais choix!! entrer une autre zone ^^")
-                site = str(input())
+                site = str(input('Vous avez mal ecrit le site! Essayer une autre fois SVP! \n'))
             S.append(site)
         matrix= np.loadtxt('Matrix2.txt', usecols=range(8))
         for i in range(len(S)-1):
             D+=matrix[dictioII[S[i]]][dictioII[S[i+1]]]
-        print("la distance de cet intineraire est: " + str(D) +"km")
+        print('Vous avez parcorru ou vous allez parcourir est de: ' + str(D) + 'km \n')
       
 

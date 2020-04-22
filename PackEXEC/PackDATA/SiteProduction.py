@@ -8,24 +8,24 @@ class SiteProduction(ZoneTouristique):
         ZoneTouristique.__init__(self,zone)
         self.prod=prod
     def PCategoryI(self): 
-        print('La categorie choisie est -----Site de Production-----\n')
+        print('La categorie-----Site de Production-----\n')
         print('\t****** Les Sites de Categorie Site de Production sont: *****\n')
-        print('\t', self.Prod[0], '\n \t', self.Prod[1], '\n ')
+        print('\t >', self.Prod[0], '\n \t >', self.Prod[1], '\n ')
         return(True)
     def MThemeArtI(self): 
-        print('Le theme choisie est -----Artisanat-----\n')
+        print('Le theme-----Artisanat-----\n')
         print('\t****** Les Sites de Theme Artisanat sont: *****\n')
-        print('\t', self.Prod[0],'\n \t', self.Prod[1], '\n ')
+        print('\t >', self.Prod[0],'\n \t >', self.Prod[1], '\n ')
         return(True)
     def PCategoryII(self): 
-        print('La categorie choisie est -----Site de Production-----\n')
+        print('La categorie-----Site de Production-----\n')
         print('\t****** Les Sites de Categorie Site de Production sont: *****\n')
-        print('\t',self.ProdII[0], '\n \t', self.ProdII[1], '\n \t', self.ProdII[2],'\n ')
+        print('\t >',self.ProdII[0], '\n \t >', self.ProdII[1], '\n \t >', self.ProdII[2],'\n ')
         return(True)
     def MThemeArtII(self): 
-        print('Le theme choisie est -----Artisanat-----\n')
+        print('Le theme-----Artisanat-----\n')
         print('\t****** Les Sites de Theme Artisanat sont: *****\n')
-        print('\t' ,self.ProdII[0], '\n \t' ,self.ProdII[1], '\n \t', self.ProdII[2], '\n')
+        print('\t >' ,self.ProdII[0], '\n \t >' ,self.ProdII[1], '\n \t >', self.ProdII[2], '\n')
         return(True)
         
 
